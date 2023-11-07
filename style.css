@@ -1,0 +1,140 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif, Helvetica, Arial, Verdana;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+.container {
+    padding: 1em; 
+  }
+
+svg {
+    background:url(../Assets/BCK_GRND.jpg);
+    width:20vmin; height:auto;
+    display:block;
+    margin:10vmin;
+    border-radius: 20%;
+    transition-delay: 3s;
+    transition: 0.3s ease-in-out;
+}
+
+svg:hover {
+    width:50vmin; height:auto;
+    display:block;
+    margin:10vmin;
+    border-radius: 20%;
+    transition: 0.3s ease-in-out;
+    rotate: -30deg;
+}
+
+.font1 {
+    font-size: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+svg:hover .font1 {
+    transition:font-size .1s ease-in;
+    font-size: 12px;
+    font-weight:bolder;
+}
+
+.font2 {
+    font-size: 8px;
+    transition: 0.2s ease-in-out;
+}
+
+svg:hover .font2 {
+    transition:font-size .3s ease-in;
+    font-size: 15px;
+}
+
+.font3 {
+    font-size: 6px;
+    transition: 0.2s ease-in-out;
+}
+
+svg:hover .font3 {
+    transition:font-size .5s ease-in;
+    font-size: 8px;
+}
+
+/* *** Text *** */
+
+.mission {
+    text-align: right;
+    padding: 0rem 5rem 5rem 50rem;
+    transition: 1s ease-in;
+    color: #15e7f2;
+    font-weight: lighter;
+    letter-spacing: 0.3rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.test{
+    border-top: white double 10px;
+    background:url(../Assets/BCK_GRND.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    cursor: none;
+    overflow: hidden;
+}
+.hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 60px;
+    background: #000;
+    color: #fff;
+}
+.hero-text h1{
+    font-size:5vw;
+    font-weight: 300;
+}
+.hero-text h1 span{
+    color: #88ce02;
+    font-weight: 700;
+}
+.cursor{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    color: #fff;
+}
+
+
+.cursor-text{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+.cursor-text .char {
+    position: absolute !important;
+}
