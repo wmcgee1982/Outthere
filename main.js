@@ -4,7 +4,6 @@ Splitting();
 let cursor = document.querySelector('.cursor'),
     cursorText = cursor.querySelectorAll('.char');
 
-
 function rounded(radius) {
   
     for (let i = 0; i < cursorText.length; i++) {
@@ -24,7 +23,6 @@ function rounded(radius) {
 
 let radius = 70
 
-
 function cursorMove(e) {
     var mouseX = e.clientX,
         mouseY = e.clientY
@@ -36,8 +34,6 @@ function cursorMove(e) {
         ease: Expo.ease
     })
 }
-
-
 
 function init() {
     rounded(radius);

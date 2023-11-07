@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background:url(../Assets/BCK_GRND.jpg);
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,21 +20,22 @@ body {
 
 svg {
     background:url(../Assets/BCK_GRND.jpg);
-    width:20vmin; height:auto;
+    width:40vmin; height:auto;
     display:block;
     margin:10vmin;
-    border-radius: 20%;
+    border-radius: 50%;
     transition-delay: 3s;
     transition: 0.3s ease-in-out;
+    rotate: -10deg;
 }
 
 svg:hover {
-    width:50vmin; height:auto;
+    width:60vmin; height:auto;
     display:block;
     margin:10vmin;
-    border-radius: 20%;
+    border-radius: 10%;
     transition: 0.3s ease-in-out;
-    rotate: -30deg;
+    rotate: -20deg;
 }
 
 .font1 {
@@ -46,6 +47,7 @@ svg:hover .font1 {
     transition:font-size .1s ease-in;
     font-size: 12px;
     font-weight:bolder;
+    color: black;
 }
 
 .font2 {
@@ -59,82 +61,39 @@ svg:hover .font2 {
 }
 
 .font3 {
-    font-size: 6px;
+    font-size: 3px;
     transition: 0.2s ease-in-out;
 }
 
 svg:hover .font3 {
     transition:font-size .5s ease-in;
-    font-size: 8px;
+    font-size: 4px;
+}
+
+rect:hover {
+    background-color: white;
 }
 
 /* *** Text *** */
 
 .mission {
+    animation: mymove 5s infinite;
     text-align: right;
     padding: 0rem 5rem 5rem 50rem;
     transition: 1s ease-in;
-    color: #15e7f2;
+    transition: 1s ease-out;
+    color: #ff71cb;
     font-weight: lighter;
     letter-spacing: 0.3rem;
     line-height: 2rem;
     font-size: 1.2rem;
 }
 
-.test{
-    border-top: white double 10px;
-    background:url(../Assets/BCK_GRND.jpg);
-    min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-a {
-    text-decoration: none;
-}
-ul {
-    list-style-type: none;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    cursor: none;
-    overflow: hidden;
-}
-.hero-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    padding: 60px;
-    background: #000;
-    color: #fff;
-}
-.hero-text h1{
-    font-size:5vw;
-    font-weight: 300;
-}
-.hero-text h1 span{
-    color: #88ce02;
-    font-weight: 700;
-}
-.cursor{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
-    color: #fff;
-}
-
-
-.cursor-text{
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-}
-.cursor-text .char {
-    position: absolute !important;
-}
+@keyframes mymove {
+    50% {font-size: 40px;
+        color: #9e76f1;
+        letter-spacing: 0.3rem;
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+  }
